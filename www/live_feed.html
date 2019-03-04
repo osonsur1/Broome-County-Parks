@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+        <meta http-equiv="Content-Security-Policy" content="
+        default-src *; 
+        style-src * 'unsafe-inline'; 
+        script-src * 'unsafe-inline'; 
+        media-src *; img-src * data:; 
+        " />
+
+
+
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <title>Updates</title>
+        
+    </head>
+    <body>
+        <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <style>
+            .fb-page { width: 100% !important; height:100%!important;	}
+            .fb-page span { width: 100% !important; height:4650px!important;} 
+            .fb-page iframe[style] { width: 100% !important; height:100%!important;	}     
+        </style>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="index.html">Broome County Parks</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parks.html">Parks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Triathlon.html">Triathlon</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="live_feed.html">Live Feed</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="Information.html">Parks Info Chart</a>
+                  <a class="dropdown-item" href="News.html">News Releases</a>
+                  <a class="dropdown-item" href="State_Forests.html">State Forests in Broome County</a>
+                  <a class="dropdown-item" href="about.html">About</a>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                  <a class="dropdown-item" href="FAQ.html">FAQs</a>
+                  <a class="dropdown-item" href="legal.html">Legal/Copyright Information</a>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </nav><br/><br/>
+        <div class="container text-center"><br/><br/>
+            <h1>Live updates!</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well"><br/>
+                        <h5><b>Twitter</b></h5>
+                        <a class="twitter-timeline" href="https://twitter.com/BroomeCoParks?ref_src=twsrc%5Etfw">Tweets by BroomeCoParks</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br/><br/>
+                        <h5><b>facebook</b></h5>
+                        <div class="fb-page" data-href="https://www.facebook.com/BroomeCountyParks/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+                        
+                </div>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    
+        <div data-role="footer" id="footer">
+            <p class="text-center" style="position: relative; right: 0; bottom: 0; left: 0; padding: 1rem; text-align: center">Copyright &copy; 2018, Broome County</p>
+        </div> <!-- footer -->
+    </body>
+</html>

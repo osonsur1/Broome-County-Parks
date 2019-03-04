@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *; 
+    style-src * 'unsafe-inline'; 
+    script-src * 'unsafe-inline'; 
+    media-src *; img-src * data:; 
+    " />
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Roundtop Picnic Area</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parks.html">Parks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Triathlon.html">Triathlon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="live_feed.html">Live Feed</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="Information.html">Parks Info Chart</a>
+              <a class="dropdown-item" href="News.html">News Releases</a>
+              <a class="dropdown-item" href="State_Forests.html">State Forests in Broome County</a>
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="FAQ.html">FAQs</a>
+              <a class="dropdown-item" href="legal.html">Legal/Copyright Information</a>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav><br/><br/>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well"><br/>
+                        <h2 class="w3-center">Roundtop Picnic Area</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/roundtop.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Roundtop%20playground.jpg" style="width:100%">
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p> Roundtop Picnic Area sits high above Endicott, offering spectacular views looking to the east and west through the Susquehanna River Valley. This picnic area became a reality through the combined efforts of Broome County, the Village of Endicott and the Endicott Rotary Club. It is a haven for families and individuals seeking a pleasant and relaxing day away from work.<br/><br/> For more information, call 607-778-2193 or 607-778-6541.<br/><br/><b>Online reservations for picnic shelters: <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/roundtop-picnic-area/r/facilityDetails.do?contractCode=PRCG&parkId=1064051', '_system');">reserveamerica.com</a></b><br/><br/>For more information, call 607.778.2193 or 607.693.1389.<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Roundtop-Picnic-Area-Endicott-New-York-231128513569300/?fref=ts', '_system');">facebook</a>!</p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <ul>
+                                <li>Picnicking</li>
+                                <li>Children's play structure</li>
+                                <li>Two picnic shelters - 80 person capacity, available by <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/roundtop-picnic-area/r/facilityDetails.do?contractCode=PRCG&parkId=1064051', '_system');">reservation online</a>. For information, call 607.778.2193.  Shelter rental rates are $90.00 on weekends/holidays, with a reduced rate of $30.00 on non-holiday weekdays.</li>
+                                <li>Restrooms</li>
+                                <li>Tables and grills</li>
+                                <li>Scenic vistas</li>
+                            </ul>
+                            <p><b><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/HawkinsPondNatureAreaTrails-Updated_2011-12-23.pdf', '_system');">Hiking Trails Guide</a><br/><br/><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/HawkinsPondNatureAreaTrails-Updated_2011-12-23.pdf', '_system');">Cross-Country Skiing Trails Guide</a></b></p>
+                        </div>
+                        
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.090033;
+                                var lon = -76.0709708;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.090033, -76.0709708', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>1 Roundtop Park Street<br/>Endicott, NY 13760<br/>607.778.6541</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM THE WEST:<br/>Take Rt. 17 East to Exit 66. Turn right at end of ramp and go .2 miles to right turn "To Rt. 17C". Cross over bridge to traffic signal at Rt.17C. Turn right onto 17C East and travel 4.6 miles to Lillian Avenue. Turn right on Lillian Avenue and go to end and bear right up hill to Roundtop
+                                Picnic Area entrance.<br/><br/>FROM THE EAST:<br/>Take Rt. 17 West to Exit 67 North. Crossover bridge and take exit ramp to Rt. 17C West (Main Street). Follow 17C west 1.6 miles to Lillian Avenue. Turn left onto Lillian Avenue. Go to end and bear right uphill to Roundtop Picnic Area entrance.<br/><br/>FROM THE NORTH OR SOUTH:<br/>Take I-81 North or South to Rt. 17 West. Then follow directions from the east (above).<br/><br/>FROM THE NORTHEAST:<br/>Take I-88 East to I-81 South to Rt. 17 West. Then follow directions from the east above.</p>
+
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    
+    <div data-role="footer" id="footer">
+                <p class="text-center" style="position: relative; right: 0; bottom: 0; left: 0; padding: 1rem; text-align: center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

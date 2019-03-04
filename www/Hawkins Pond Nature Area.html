@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *; 
+    style-src * 'unsafe-inline'; 
+    script-src * 'unsafe-inline'; 
+    media-src *; img-src * data:; 
+    " />
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Hawkins Pond Nature Area</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parks.html">Parks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Triathlon.html">Triathlon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="live_feed.html">Live Feed</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="Information.html">Parks Info Chart</a>
+              <a class="dropdown-item" href="News.html">News Releases</a>
+              <a class="dropdown-item" href="State_Forests.html">State Forests in Broome County</a>
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="FAQ.html">FAQs</a>
+              <a class="dropdown-item" href="legal.html">Legal/Copyright Information</a>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav><br/><br/>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well"><br/>
+                        <h2 class="w3-center">Hawkins Pond Nature Area</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/hawkins.jpg" style="width:100%">
+
+                          <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>Hawkins Pond Nature Area offers a secluded "nature experience" with its plentiful wildlife and wide variety of habitat-types. Approximately 4 miles of nature trails lead visitors through woods and fields and around the scenic 24-acre pond. Hawkins Pond Nature Area is a participant in the Wegman's <a style="color: aqua" href="#" onclick="window.open('http://www.wegmans.com/webapp/wcs/stores/servlet/ProductDisplay?productId=733834&storeId=10052&langId=-1', '_system');">"Passport to Family Wellness"</a> program.<br/><br/><b>Online reservations for picnic shelters: <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/hawkins-pond-nature-area/r/facilityDetails.do?contractCode=PRCG&parkId=1064152', '_system');">reserveamerica.com</a></b><br/><br/>For more information, call 607.778.2193 or 607.693.1389.<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Hawkins-Pond-Nature-Area-138163583043669/?fref=ts', '_system');">facebook</a>!</p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <ul>
+                                <li>Picnicking</li>
+                                <li>Tables and grills</li>
+                                <li>Restrooms</li>
+                                <li>Picnic shelter - 40 person capacity, available by reservation -Click here for <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/hawkins-pond-nature-area/r/facilityDetails.do?contractCode=PRCG&parkId=1064152', '_system');">online reservations</a> (reserve america.com). For information call (607)778-2193.  Shelter rental rates are $90.00 on weekends/holidays andreduced rate of $30.00 non-holiday weekdays.</li>
+                                <li>Trails (click below for Trails Guide)</li>
+                                <li>Fishing from shore permitted</li>
+                                <li>No camping, swimming or boating allowed</li>
+                            </ul>
+                            <p><b><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/HawkinsPondNatureAreaTrails-Updated_2011-12-23.pdf', '_system');">Hiking Trails Guide</a><br/><br/><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/HawkinsPondNatureAreaTrails-Updated_2011-12-23.pdf', '_system');">Cross-Country Skiing Trails Guide</a></b></p>
+                        </div>
+                        
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.0047506;
+                                var lon = -75.6510793;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.0047506, -75.6510793', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>224 Scouten Hill Road<br/>Windsor, NY 13865<br/>607.693.1389</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM THE NORTH:<br/>I-88to Exit 6 (Harpursville Exit). Turn right at bottom of ramp if headed east on I-88 or left at bottom of ramp if headed west on I-88 onto Rt. 79 South to Windsor. Follow Rt. 79 South through Windsor then 3.5 miles to Edson Road. Turn right onto Edson Road and go 2 miles to Scouten Hill Road. Turn left onto Scouten Hill Road and go 2 miles to park. Picnic shelter is located 1 mile on right at end of pond after entering park area at top of hill.<br/><br/>FROM THE SOUTH:<br/>SR171 North from Hallstead/Great Bend, PA area off of I-81 exits. Take a left onto Hickory Grove Road in Hickory Grove. Follow Hickory Grove Road 3 miles to park area and shelter road entrance on left. Also reachable from SR 171 in Oakland/Susquehanna, PA south on Rt. 79 to left onto Edson Road and follow directions above (from the North).<br/><br/>FROM THE WEST:<br/>Rt.17 East (future I-86) to Exit 79 (Windsor). Turn right at bottom of ramp onto Rt. 79 South. Follow Rt. 79 South for 3.6 miles to Edson Road. Turn right onto Edson Road and go 2 miles to Scouten Hill Road. Turn left onto Scouten Hill Road and go 2 miles to park. Picnic shelter is located 1mile on right at end of pond after entering park area at top of hill.<br/><br/>FROM THE EAST:<br/>Rt.17 West (future I-86) to Exit 79 (Windsor). Turn right at bottom of ramp onto Chapel Street headed east to blinking light at four-way intersection. Turn right onto Rt. 79 South. Follow Rt. 79 South for 3.9 miles to Edson Road. Turn right onto Edson Road and go 2 miles to Scouten Hill Road. Turn left onto Scouten Hill Road and go 2 miles to park. Picnic shelter is located 1 mile on right at end of pond after entering park area at top of hill.</p>
+
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    
+    <div data-role="footer" id="footer">
+                <p class="text-center" style="position: relative; right: 0; bottom: 0; left: 0; padding: 1rem; text-align: center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

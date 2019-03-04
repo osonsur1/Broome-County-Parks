@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Aqua-Terra Wilderness Area</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h2 class="w3-center">Aqua-Terra Wilderness Area</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/Aqua%20Terra%20morning%20August.jpg" style="width:100%">
+
+                          <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>Formerly the site of the Aqua-Terra Sportsman's Club and Innsbruck USA ski area, Aqua-Terra Wilderness Area offers 466 acres of largely undeveloped natural settings. A 6-acre pond provides a secluded fishing experience* and opportunities for wildlife-watching.<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Aqua-Terra-Wilderness-Area-123821354355863/?fref=ts', '_system');">facebook</a>!</p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <p>As at all Broome County Parks' facilities, admission is free. Visitors are required to be aware of and follow Parks' rules:</p>
+                            <ul>
+                                <li>Dogs are permitted but must be kept on a leash no longer than 8-ft in length; owners must pick up after their dogs.</li>
+                                <li>Motorized vehicles are not permitted on the trails.</li>
+                                <li>Camping is not permitted.</li>
+                                <li>Fishing from shore is permitted; swimming, wading, and boats are not permitted.</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <p>Aqua-Terra Wilderness Area is located off Maxian Road in the Town of Binghamton.</p>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.0296596;
+                                var lon = -75.9444359;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.0296596, -75.9444359', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>Maxian Road<br/>Town of Binghamton</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM THE NORTH:<br/>Take I-81 South to Exit 4S (Rt. 7 South). Follow 363 South 1.6 miles under bridge and exit to right onto NY 434 to Vestal. Broome County Veterans Memorial Arena will be on your left while on the NY 434 exit ramp. Go .8 miles across bridge to Pennsylvania Avenue exit. Follow Pennsylvania Avenue4.6 miles to Maxian Road. Turn right on Maxian Road and go 1.1 miles to Aqua-Terra Wilderness Area.<br/><br/>FROM THE SOUTH:<br/>Take I-81 North to Exit 4 S and follow the directions "From the North" above.<br/><br/>FROM THE WEST:<br/>Take Rt. 17 East to I-81 South to Exit 4 S and follow directions "From the North"above.<br/><br/>FROM THE NORTHEAST:<br/>Take I-88 West to I-81 South and follow the directions "From the North" above.<br/><br/></p>
+
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <div data-role="footer" id="footer" style="position: relative; left: 0; bottom: 0; width: 100%; text-align: center;">
+                <p class="text-center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

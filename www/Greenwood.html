@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *; 
+    style-src * 'unsafe-inline'; 
+    script-src * 'unsafe-inline'; 
+    media-src *; img-src * data:; 
+    " />
+    
+    
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Greenwood Park</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="parks.html">Parks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Triathlon.html">Triathlon</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="live_feed.html">Live Feed</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="Information.html">Parks Info Chart</a>
+              <a class="dropdown-item" href="News.html">News Releases</a>
+              <a class="dropdown-item" href="State_Forests.html">State Forests in Broome County</a>
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="FAQ.html">FAQs</a>
+              <a class="dropdown-item" href="legal.html">Legal/Copyright Information</a>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    </nav><br/><br/>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well"><br/><br/>
+                        <h2 class="w3-center">Greenwood Park</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/greenwood.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Greenwood%20shelter.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Greenwood%20camping.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Greenwood%20camping%202.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Greenwood%20Picnic%20Area.jpg" style="width:100%">
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>Greenwood is the County's first and most diverse park. The well-maintained campground offers the entire family a quality camping experience. The lake's spring-fed waters provide refreshing swimming areas at the white sand beach, as well as great opportunities for anglers of all ages, from shore or from a rental boat. Relax in the shade or bask in the sun in the extensive picnic areas, or enjoy the peaceful beauty of the park's nature trail system. In winter, this year-round park offers ice-fishing, and miles of groomed cross-country ski trails and equipment rentals. Organized youth groups may secure a permit to use the Youth Group Camping Area, located on the northwest side of the lake. <br/><br/> <b>Online reservations for Greenwood Park Campground & picnic shelters: <a style="color: aqua" href="#" onclick="window.open('reserveamerica.com', '_system');">reserveamerica.com</a></b><br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Greenwood-Park-470486269691344/?fref=ts', '_system');">facebook</a>!<br/><br/></p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <br/>
+                            <ul>
+                                <li>Picnicking</li>
+                                <li>Open and shaded grounds</li>
+                                <li>Tables and grills</li>
+                                <li>Water taps and fountains</li>
+                                <li>Playground equipment</li>
+                                <li>Horseshoe pits</li>
+                                <li>Restrooms</li>
+                                <li>Four picnic shelters, each 100 person capacity, available by <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/greenwood-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064400', '_system');">reservation online</a> - for more information, call 607.778.2193.  Rental rates are $90.00 on weekends/holidays, with a reduced rate of $30.00 on non-holiday weekdays. A $5 transaction fee is applied to all reservations.</li>
+                                <li>Sand volleyball</li>
+                                <li>Campground and Camp Store</li>
+                                <li>Food concession</li>
+                                <li>6.5 mile <a style="color: aqua" href="#" onclick="window.open('http://gobroomecounty.com/files/parks/pdfs/GreenwoodTrailGuide.pdf?_ga=2.66977134.1378412907.1532362709-943956529.1532022453', '_system');">nature trail</a> system; participant in the Wegman's <a style="color: aqua" href="#" onclick="window.open('http://www.wegmans.com/webapp/wcs/stores/servlet/ProductDisplay?productId=733834&storeId=10052&langId=-1', '_system');">"Passport to Family Wellness"</a> program</li>
+                                <li>Youth Group Camp Area for organized youth groups; call 607.778.2193 for information or a permit. Please secure a permit at least one week in advance.</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><strong>Camping</strong></button>
+                        <div class="content"><br/>
+                            <p>For answers to questions about camping at Greenwood Park, call the Broome County Department of Parks, Recreation and Youth Services at 607.778.2193.<br/>Reservations must be made online (<a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/greenwood-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064400', '_system');">reserveamerica.com</a>). Those arriving without a reservation will need to access <a style="color: aqua" href="#" onclick="window.open('http://www.reserveamerica.com/', '_system');">www.reserveamerica.com</a> to make a reservation. A $5 transaction fee is applied to each stay (not a per night fee.)</p>
+                             <ul>
+                                <li>50 sites- with electric</li>
+                                <li>Picnic table and fire pit at each site.</li>
+                                 <li>Water taps centrally-located within each camping loop.   (Click here for <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/Campground%20Map%20with%20Vehicle%20Lengths.pdf', '_system');">map of Campground Layout</a>.)</li>
+                                 <li>Children's play structure</li>
+                                 <li>Modern restrooms</li>
+                                 <li>Hot water showers</li>
+                                 <li>Dumping station (for use by those camping at Greenwood Park only)</li>
+                                 <li>Overnight Security coverage during camping season</li>
+                                 <li>Walk, bike, or drive to beach, boat rentals, or fishing</li>
+                                 <li>Camp store (firewood*, ice, snacks, cold drinks, & camping essentials)</li>
+                                 <li><b>*Those bringing in their own firewood must be aware of and comply with <a style="color: aqua" href="#" onclick="window.open('https://www.dontmovefirewood.org/map/new-york/', '_system');">NYS firewood transportation regulations</a>.</b></li>
+                                 <li>Easy access to nature trails</li>
+                                 <li><a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/greenwood-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064400', '_system');">Reservations</a> are required.</li>
+                            </ul>
+                            <br/>
+                            <p><b>Additional information</b></p>
+                            <ul>
+                                <li>Open beginning mid-May (weekends only; "non-peak season"). Open daily Memorial Day weekend through Labor Day ("peak season"). Open weekends after Labor Day, through Columbus Day ("non-peak season")</li>
+                                <li>Seasonal Rate (Memorial Day Weekend through Labor Day Weekend) with electric is available. Call 607-778-2193.</li>
+                                <li>Reservation Fee $5.00.</li>
+                                <li>Choose your site number when making a reservation.</li>
+                                <li>Campers must occupy the site immediately</li>
+                                <li>Check-in time is 12:00 noon. Check Out Time: 11:00 a.m.</li>
+                                <li>Quiet Hours: 11:00 p.m. - 7:00 a.m.</li>
+                                <li>Visitors Must Vacate Campground by: 11:00 p.m.</li>
+                            </ul>
+                        <br/>
+                            <p>*Veteran must present the Broome County Veteran ID card at the park to receive discount. More information may be found <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/veterans', '_system');">here.</a></p>
+                        <br/>
+                        </div>
+                        <button class="collapsible"><p><strong>Swimming - Memorial Day weekend-Labor Day</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>White sand beach; open 11:00am-7:30pm (hours may vary)</li>
+                                <li>Swimmers' and Non-swimmers' Sections</li>
+                                <li>Certified lifeguards</li>
+                                <li>Changing areas with showers and restrooms</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><p><strong>Boating</strong></button>
+                        <div class="content"><br/>
+                            <p>Rental boats are available from 11:00 a.m. to 7:30 p.m. Memorial Day Weekend through Labor Day (hours may vary). Privately owned boats are not permitted at Greenwood Park, but may be launched at  nearby <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/parks/dorchester', '_system');">Dorchester Park</a>, or at <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/parks/grippen', '_system');">Grippen Park</a>.<br/><br/><b>Boat Rentals</b></p>
+                            <style>
+                                table {
+                                    font-family: arial, sans-serif;
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+
+                                td, th {
+                                    border: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                }
+
+                                tr:nth-child(even) {
+                                    background-color: #000;
+                                }
+                            </style>
+                            <div style="overflow-x: auto;">
+                                <table>
+                                  <tr>
+                                    <th>Boat</th>
+                                    <th>Deposit</th>
+                                    <th>Per Hour</th>
+                                    <th>Per Day</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Rowboats/Canoes</td>
+                                    <td>$10.00</td>
+                                    <td>$5.00</td>
+                                    <td>$20.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Paddle Boats/Kayaks</td>
+                                    <td>$10.00</td>
+                                    <td>$8.00</td>
+                                    <td>N/A</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*Senior Citizen(age60+) /Veteran Rowboats/Canoes</td>
+                                    <td>$5.00</td>
+                                    <td>$3.00</td>
+                                    <td>$10.00</td>
+                                  </tr>
+                                </table>
+                            </div>
+                            <p><br/>* Veterans must present the <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/budget/veterans-discount-program', '_system');">Broome County Veteran ID</a> card to receive discount. More information can be found <a style="color: aqua" href="#" onclick="window.open('http://www.gobtoomrcounty.com/veterans', '_system');">here</a>.</p>
+                        </div>
+                        <button class="collapsible"><p><strong>Fishing</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Trout, bass and panfish</li>
+                                <li>Fish from shore or rental boat.</li>
+                                <li>Ice fishing</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Self-Guided Nature Trail</strong></button>
+                        <div class="content"><br/>
+                            <p><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/GreenwoodTrailGuide.pdf', '_system');">Self-Guided Nature Walk Information Page</a></p>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Group Camping</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Group camping, by organized youth groups, (i.e. church youth groups, schools, YMCA, YWCA, Boy Scouts, Girl Scouts) is available, by permit only.</li>
+                                <li>Groups must secure a permit at least one week prior to the date requested.</li>
+                                <li>Please call 607.778.2193 for a permit, or additional information on group camping.</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Winter (Cross-Country Skiing)</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Cross-Country Skiiing</li>
+                                <li>Toboggans</li>
+                                <li>Snow Shoes</li>
+                                <li>Warming room</li>
+                            </ul>
+                            <p><br/><strong>Cross-Country Skiing</strong><br/><br/>*Availability of skiing is dependent upon snow and trail conditions. Check for announcements on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Greenwood-Park-470486269691344/', '_system');">facebook</a>, or call ahead: 607.862.9933 or 607.778.2193.<br/><br/>Almost 6 miles of groomed trails provide opportunities for beginners through expert skiers. Snowshoes or skis are required on the trails (no hiking). Bring your own equipment and pay only a $5.00 trail use fee for the day, or rent equipment at the park (no trail use fee for renters.) Season passes are available at the park. Children's sizes are available, beginning with approximately age 4.<br/><b>Hours of equipment rental operation:</b><br/></p>
+                            <ul>
+                                <li>8:00 a.m. - 4:00 p.m. weekdays</li>
+                                <li>9:00 a.m. - 4:00 p.m. weekends</li>
+                            </ul>
+                            <p><b>Equipment rental rates:</b></p>
+                            <ul>
+                                <li>Cross-Country Skis or Snowshoes - $5.00 per hour</li>
+                                <li>No additional Trail Use Fee if renting equipment.</li>
+                            </ul>
+                            <p><b>Trail use fee (Non-Renters):</b></p>
+                            <ul>
+                                <li>$5.00 per day, or Season Pass for $35.00</li>
+                            </ul>
+                            <p>All trails begin at the ski concession stand and rental operation. Please, no dogs or other pets on the ski trails at any time.<br/><br/><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/CrossCountryBrochure.pdf#page=3', '_system');"><b>Cross-Country Skiing Trail Guide</b></a><br/><br/>For ski conditions and other questions, call 607.862.9933, or check <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/GreenwoodParkBC/', '_system');">facebook</a>.</p>
+                        </div>
+                            
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.2922002;
+                                var lon = -76.0933989;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.2922002, -76.0933989', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>153 Greenwood Road<br/>Lisle, NY 13797<br/>607.862.9933</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM BINGHAMTON:<br/>Rt.17 to Exit 71 N (Airport Road). Go approximately 6 miles north on Airport Road. Turn left onto Commercial Drive. At end of Commercial Drive take right onto East Maine Road. Go 3 miles on East Maine Road to stop sign. Go straight onto a.m.es Road to stop sign. Turn right on Nanticoke Road- travel 7 miles. Turn left onto Greenwood Road.<br/><br/>FROM ENDICOTT:<br/>Rt.26 North to Village of Maine. Pass elementary school on left, bear left at "Y" onto Nanticoke Road. Go 8 miles on Nanticoke Road. Turn left onto Greenwood Road.<br/><br/>FROM ITHACA:<br/>Rt.79 East to Center Lisle. Pass white church on left, turn right onto Caldwell Hill Road. Go approximately 5 miles on Caldwell Hill Road. Turn right onto Greenwood Road.<br/><br/>FROM WHITNEY POINT:<br/>Rt.11 North to Rt. 79 West. Go approximately 4-5 miles to Caldwell Hill Road. Turn left on Caldwell Hill Road. Go 4 miles on Caldwell Hill Road. Turn right onto Greenwood Road.<br/><br/>FROM OWEGO/NEWARK VALLEY:<br/>Rt.38 North to Wilson Creek road (next to Newark Valley High School). Right on Wilson Creek Road. Approximately 5 miles to right tonetic Road. Stay on Ketchumville Road to end. Straight at stop sign to Greenwood Road.</p><br/>
+
+                        </div>
+                        
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    
+    <div data-role="footer" id="footer">
+                <p class="text-center" style="position: relative; right: 0; bottom: 0; left: 0; padding: 1rem; text-align: center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

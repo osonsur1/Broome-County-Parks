@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Next</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h2 class="w3-center">Otsiningo Park / Otsiningo North</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/Otsiningo.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Otsiningo%20Playground.jpg" style="width:100%">
+
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>Built by the New York State Department of Transportation and leased, improved and maintained by Broome County Parks Department, Otsiningo provides a refreshing interlude close to the urban core. Named for one of the many 18th century Native American words for the lower Chenango River Valley, Otsiningo Park land was once inhabited by peoples of several Indian nations. With its easily-reached centralized location, easy-to-walk paved trails, and a specially-designed ADA-compliant playground, Otsiningo Park offers opportunities for all to enjoy a day at the park.<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Otsiningo-Park-1613521272224647/?fref=ts', '_system');">facebook</a>!</p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <ul>
+                                <li>Tables and grills</li>
+                                <li>Water taps and fountains</li>
+                                <li>Paved walking path</li>
+                                <li>Open Play Field</li>
+                                <li>Softball field and 4 Soccer fields, available by reservation - call 607.778.2193 beginning in January for April-October of the current year.  Rate is $15.00 per field per day. (NOTE: Soccer fields at Otsiningo North are reservable through the  <a style="color: aqua" href="#" onclick="window.open('http://www.townofchenango.com/', '_system');">Town of Chenango</a>.)</li>
+                                <li>Sand volleyball courts (4), available by reservation - call 607.778.2193 beginning in January for April-October of the current year.  Rate is $10.00 per court per day.</li>
+                                <li>Bocce court</li>
+                                <li>Restrooms</li>
+                                <li>Children's play structures, including handicapped accessible features.</li>
+                                <li>Community Gardens (contact <a style="color: aqua" href="mailto:ocgagardens@gmail.com" target="_top">ocgagardens@gmail.com</a>)</li>
+                                <li>Two picnic shelters, 100 person capacity, available by reservation online (<a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/otsiningo-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064100', '_system');">reserveamerica.com</a>)  Call 607.778.2193 for information.  Shelter rental rates are $90.00 on weekends/holidays, and the reduced rate of $30.00 on non-holiday weekdays..</li>
+                                <li><a style="color: aqua" href="#" onclick="window.open('http://www.spiediefest.com/', '_system');">Annual Spiedie Fest and Balloon Rally</a></li>
+                                <li>"Broome Bands Together" Free Summer Concert Series</li>
+                                <li>Back in 2017! Broome County Parks <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/_pdf/Scarecrow%20flyer%202017.pdf', '_system');">Scarecrow Contest and Display!</a> Click here for an <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/_pdf/Scarecrow%20Contest%20Entry%20form.pdf', '_system');">Entry form</a>, or give us a call at <a style="color: aqua" href="tel:+16077782193">(607)778-2193</a>. Entry forms are due by 9/22/17; scarecrows must be completed by Oct 7, 2017.</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><strong>Walking/Biking Trail</strong></button>
+                        <div class="content">
+                            <p><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/OtsiningoTrailGuide_Rev2011.pdf', '_system');">Otsiningo Park Trail Guide</a><br/><br/>Participant in the Wegman's <a style="color: aqua" href="#" onclick="window.open('http://www.wegmans.com/webapp/wcs/stores/servlet/ProductDisplay?productId=733834&storeId=10052&langId=-1', '_system');">"Passport to Family Wellness"</a> program.</p>
+                        </div>
+                        <button class="collapsible"><p><strong>Otsiningo Community Gardeners' Association</strong></button>
+                        <div class="content">
+                            <p>For more information, contact <a style="color: aqua" href="mailto:ocgagardens@gmail.com" target="_top">ocgagardens@gmail.com</a>, or the Association facebook page at <a style="color: aqua" href="#" onclick="window.open('http://www.facebook.com/ocgapage', '_system');">www.facebook.com/ocgapage</a>.The Otsiningo Community Gardener's Association offers a rental garden plot program to the public. <br/><br/><h5><b>Otsiningo Park Farmers' Market (Now the Broome County Regional Farmers' Market)</b></h5>The Otsiningo Park Farmers' Market has transitioned to the Broome County Regional Farmers' Market located in their new, year-round building at Cornell Cooperative Extension of Broome County. Visit <a style="color: aqua" href="#" onclick="window.open('http://www.bcregionalmkt.com/', '_system');">their website</a> for more information</p>
+                            <img src="img/regional%20farmers%20market.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                            <p><br/><h5><b>Annual Spiedie Fest and Balloon Rally</b></h5>A nationally-recognized 3-day event, this major summer attraction draws over 100,00 people to enjoy more than 40 hot-air balloons, a craft show, live music, fireworks, food vendors galore, and, of course, the spiedie cooking contest! Find out more at <a style="color: aqua" href="#" onclick="window.open('http://www.spiediefest.com/', '_system');">www.spiediefest.com</a></p><img src="img/hot%20air%20balloon.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                                <p><br/><br/><h5><b>Returning in 2017! <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/_pdf/Scarecrow%20flyer%202017.pdf', '_system');">Scarecrow Contest and Display</a></b></h5>The second annual Broome County Parks Scarecrow Contest and Display returns to Otsiningo Park this fall!<br/>Those who wish to participate must complete an <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/_pdf/Scarecrow%20Contest%20Entry%20form.pdf', '_system');">entry form</a> and submit it no later than Friday, September 22nd, 2017.<br/>For an Entry Form, rules and additional information, click <a style="color: aqua" href="#" onclick="window.open('https://gobroomecounty.co.broome.ny.us/files/_pdf/Scarecrow%20Contest%20Entry%20form.pdf', '_system');">here</a>,  or stop by the Broome County Parks Department on the 5th floor of the Broome County Office building at 60 Hawley Street. Questions may be directed to (607)778-2193. Contest entry forms are due by September 22nd; scarecrows must be completed no later than Oct 7th.<br/>Completed scarecrows must be set up in the park on Oct 6 or 7, 2017. The scarecrows will be on display from October 8 through the 21st. Prizes will be awarded.<img src="img/2017%20Proud%20to%20be%20American%20Scarecrow.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
+                            <br/><p><h5><b>Otsiningo North</b></h5><br/>The shared efforts of Broome County and the Town of Chenango transformed the former Riverfront Park into Otsiningo North. Paved trails provide access to and from Otsiningo Park, extending opportunities for bicyclists and walkers entering from either Bevier St. or Upper Front St.<br/>Otsiningo North boasts an extensive soccer field complex. Reservations for fields at Otsiningo North may be made at <a style="color: aqua" href="#" onclick="window.open('http://www.townofchenango.com/', '_system');">www.townofchenango.com</a></p>
+                        </div>
+                            
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.1244229;
+                                var lon = -75.9026169;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.1244229, -75.9026169', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>1 Otsiningo Park<br/>Binghamton, NY 13901<br/>607.778.6541</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM THE WEST:<br/>Take Rt. 17 East to Exit 72 (Front Street). Turn left at the traffic signal onto Front Street (Rt. 11 North). Turn right at first traffic signal onto Bevier Street. Otsiningo Park entrance is immediately on the left.<br/><br/>FROM THE EAST:<br/>Take Rt. 17 West to I-81 North to Exit 5 (Front Street). Turn left at traffic signal onto Front Street (Rt. 11South). Turn left at first traffic signal onto Bevier Street. Otsiningo Park entrance is immediately on the left.<br/><br/>FROM THE NORTH:<br/>Take I-81 South to Exit 5 (Front Street). Turn left at the traffic signal onto Front Street (Rt. 11 South). Turn left at the second traffic signal onto Bevier Street. Otsiningo Park entrance is immediately on the left.<br/><br/>FROM THE NORTHEAST:<br/>Take I-88 West to I-81 South to Exit 5 (Front Street). Turn left at the traffic signal onto Front Street (Rt. 11South). Turn left at the second traffic signal onto Bevier Street. Otsiningo Park entrance is immediately on the left.<br/><br/>FROM THE SOUTH:<br/>Take I-81 North to Exit 5 (Front Street). Turn left at the traffic signal onto Front Street (Rt. 11 South). Turn left at the first traffic signal onto Bevier Street. Otsiningo Park is immediately on the left.<br/><br/><strong style="color: aqua">OTSININGO NORTH</strong><br/><b>Howell Drive<br/>Binghamton, NY 13905<br/>607.778.6541</b><br/><br/>FROM THE SOUTH:<br/>Take Rt. I-81 North to Exit 6, turn right off the exit (Front Street/Rt. 11). The park is on the right (Howell Drive), just a short distance from the exit.<br/><br/>FROM THE NORTH:<br/>Take Rt. I-81 South to Exit 6, turn left and go to the light. Turn right and follow Front Street (Rt. 11) about a mile. Turn left onto Howell Drive - Otsiningo North (just south of Denny's Restaurant).</p>
+
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <div data-role="footer" id="footer" style="position: relative; left: 0; bottom: 0; width: 100%; text-align: center;">
+                <p class="text-center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

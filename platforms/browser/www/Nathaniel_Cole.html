@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Nathaniel Cole Park</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h2 class="w3-center">Nathaniel Cole Park</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/natcole.jpg" style="width:100%">
+                          <img class="mySlides" src="img/Cole%20Park%20playground%20cover.jpg" style="width:100%">
+                          
+                          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>Nathaniel Cole Park is named after a Revolutionary War veteran who settled with his family in 1795 in an area that eventually came to be called Cole's Hill. Together with his son, Nathaniel Cole, Jr., he built a tavern on the corner of what is now Farm-To-Market Road and Watrous Road. The tavern, in operation as early as 1800, became a stopping place for the stage coach en route from Binghamton to Albany. Part of the land once owned by Nathaniel Cole now comprises the Broome County Park that bears his name.<br/><br/> <b>Online reservations for Greenwood Park Campground & picnic shelters: <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/nathaniel-cole-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064150', '_system');">reserveamerica.com</a></b><br/><br/>For more information, call 607.693.1389<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Nathaniel-Cole-Park-202805003095898/?fref=ts', '_system');">facebook</a>!<br/><br/></p>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <br/>
+                            <ul>
+                                <li>Picnicking</li>
+                                <li>Open and shaded grounds</li>
+                                <li>Tables and grills</li>
+                                <li>Water taps and fountains</li>
+                                <li>Restrooms</li>
+                                <li>Playfields</li>
+                                <li>Sand volleyball</li>
+                                <li>Playground equipment</li>
+                                <li>Horseshoe pits</li>
+                                <li>Four picnic shelters, 100 person capacity, available by <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/camping/nathaniel-cole-park/r/facilityDetails.do?contractCode=PRCG&parkId=1064150', '_system');">reservation online</a> (reserveamerica.com) - For information, call 607.778.2193.  Shelter rental rates are $90.00 on weekends/holidays, with a reduced rate of $30.00 on non-holiday weekdays.</li>
+                                <li>Food concession</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><strong>Swimming: Memorial Day weekend - Labor Day</strong></button>
+                        <div class="content"><br/>
+                             <ul>
+                                <li>White sand beach; 11:00am - 7:30pm (hours may vary)</li>
+                                <li>Certified lifeguards</li>
+                                 <li>Changing areas with showers</li>
+                                 <li>Restrooms</li>
+                                 <li>Coin operated lockers</li>
+                            </ul>
+                        </div>
+                       
+                        <button class="collapsible"><p><strong>Boating</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>No private boats are allowed on Nathaniel Cole Lake. (Private boats may be launched at <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/parks/dorchester', '_system');">Dorchester Park</a> or <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/parks/grippen', '_system');">Grippen Park</a>)</li>
+                                <li>Rental boats are available from 11:00 a.m. to 7:30 p.m. Memorial Day weekend through Labor Day (hours may vary).</li>
+                            </ul>
+                            <style>
+                                table {
+                                    font-family: arial, sans-serif;
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+
+                                td, th {
+                                    border: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                }
+
+                                tr:nth-child(even) {
+                                    background-color: #000;
+                                }
+                            </style>
+                            <div style="overflow-x: auto;">
+                                <table>
+                                  <tr>
+                                    <th>Boat</th>
+                                    <th>Deposit</th>
+                                    <th>Per Hour</th>
+                                    <th>Per Day</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Rowboats/Canoes</td>
+                                    <td>$10.00</td>
+                                    <td>$5.00</td>
+                                    <td>$20.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Paddle Boats/Kayaks</td>
+                                    <td>$10.00</td>
+                                    <td>$8.00</td>
+                                    <td>N/A</td>
+                                  </tr>
+                                  <tr>
+                                    <td>*Senior Citizen(age60+) /Veteran Rowboats/Canoes</td>
+                                    <td>$5.00</td>
+                                    <td>$3.00</td>
+                                    <td>$10.00</td>
+                                  </tr>
+                                </table>
+                            </div>
+                            <p><br/>* Veterans must present the <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/budget/veterans-discount-program', '_system');">Broome County Veteran ID</a> card to receive discount. More information can be found <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/veterans', '_system');">here</a>.</p>
+                        </div>
+                        <button class="collapsible"><p><strong>Fishing</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Fish for small mouth bass and panfish from the shore or from rented boats</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Self-Guided Nature Trail</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Circle the lake on 1.5 miles of scenic trail that offers beautiful views of the lake.</li>
+                                <li>Participant in the Wegman's <a style="color: aqua" href="#" onclick="window.open('http://www.wegmans.com/webapp/wcs/stores/servlet/ProductDisplay?productId=733834&storeId=10052&langId=-1', '_system');">"Passport to Family Wellness"</a> program</li>
+                            </ul>
+                            <p><a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/Cole%20Park%20Nature%20Trail%20Guide%20(2014-01).pdf', '_system');">Cole Park Nature Trail Guide</a></p>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Youth Group Camping</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Group camping, by organized youth groups, (e.g. church youth groups, schools, YMCA, YWCA, Boy Scouts, Girl Scouts) is permitted.</li>
+                                <li>Groups must secure a permit at least one week prior to the date requested.</li>
+                                <li>Please call 607.778.2193 to request additional information or a permit. Please call at least one week prior to you planned arrival date.</li>
+                            </ul>
+                        </div>
+                            
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.1425405;
+                                var lon = -75.7063743;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.1425405, -75.7063743', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>1674 Colesville Road<br/>Harpursville, NY 13787<br/>607.693.1389</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM THE NORTH:<br/>I-81South to Exit 3 (Industrial Park Exit). At bottom of ramp, turn left at the light onto Colesville Road. Follow Colesville Road 6 miles. Entrance will be on your right.<br/><br/>FROM THE SOUTH:<br/>I-81North to Exit 2W (Court Street Exit). Follow around ramp to first light on Court Street (across from Frito Lay Plant). Turn right at light onto Colesville Road. Follow Colesville Road 6¾ miles. Entrance will be on your right.<br/><br/>FROM THE WEST:<br/>Rt.17 East intersection in Binghamton with I-81 South to Exit 3 (Industrial Park Exit). At bottom of ramp, turn left at the light onto Colesville Road. Follow Colesville Road 6 miles. Entrance will be on your right.<br/><br/>FROM THE EAST:<br/>Rt.17 West to Exit 77. Turn right off exit onto North Road. Follow North Road 4miles to four corner intersection with Colesville Road. Turn right onto Colesville Road. Follow Colesville Road 2 miles. Entrance to the park will be on your right.<br/><br/>FROM RT. 88:<br/>Rt.88 to Exit 4 (Sanitaria Springs). Follow park signs.</p><br/>
+
+                        </div>
+                        
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <div data-role="footer" id="footer" style="position: relative; left: 0; bottom: 0; width: 100%; text-align: center;">
+                <p class="text-center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>

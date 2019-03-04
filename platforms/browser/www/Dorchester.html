@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="fontawesome.css" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68oqxDNR8Ig5lFz5p5GDHV9pEmEzzqa0"></script>
+        <title>Dorchester Park</title>
+        <style>
+            .collapsible {
+                background-color: #777;
+                color: bla;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+
+            .content {
+                padding: 0 18px;
+                display: none;
+                overflow: hidden;
+                background-color: #000;
+            }
+        </style>
+    
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Broome County Parks</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="about.html">About</a>
+              <a class="dropdown-item" href="contact.html">Contact</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+        <div class="container" style="font-size-adjust: auto; margin: auto">
+           
+            
+            
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h2 class="w3-center">Dorchester Park</h2>
+
+                        <div class="w3-content w3-display-container">
+                          <img class="mySlides" src="img/dorchester.jpg" style="width:100%">
+                            
+                          <!-- <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                              showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              if (n > x.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = x.length}
+                              for (i = 0; i < x.length; i++) {
+                                 x[i].style.display = "none";  
+                              }
+                              x[slideIndex-1].style.display = "block";  
+                            }
+                        </script><br/>
+                        <!-- <img class="thumbnail" src="img/Otsiningo.jpg"> -->
+                        <p>The easy access of the launching area to a 1,200 acre reservoir has made Dorchester the small boat haven of Broome County. Rental boats are available, Memorial Day weekend-Labor Day, or bring your own. Boating, plus the many other outstanding facilities of this beautiful waterside park, truly offer something for the entire family. Dorchester is the site of the Almost-Annual <a style="color: aqua" href="#" onclick="window.open('http://www.crappiederby.com/', '_system');">Crappie Derby</a> ice fishing contest, and the <a style="color: aqua" href="#" onclick="window.open('http://gobroomecounty.com/parks/triathlon?_ga=2.42469157.142413047.1532307603-562096736.1531754075', '_system');">Annual Broome County Parks Triathlon</a>.<br/><br/>Find us on <a style="color: aqua" href="#" onclick="window.open('https://www.facebook.com/Dorchester-Park-216725275008002/?fref=ts', '_system');">facebook</a>!<br/><br/>For more information, call 607.692.4612.</p><br/>
+                        
+                        <button class="collapsible"><strong>Facilities</strong></button>
+                        
+                        <div class="content">
+                            <br/>
+                            <ul>
+                                <li>Picnicking</li>
+                                <li>Open and shaded grounds</li>
+                                <li>Tables and grills</li>
+                                <li>Water taps and fountains</li>
+                                <li>Playfield</li>
+                                <li>Playground equipment</li>
+                                <li>Horseshoe pits</li>
+                                <li>Restrooms</li>
+                                <li>Three Picnic shelters-100 person capacity, available by reservation. <a style="color: aqua" href="#" onclick="window.open('https://www.reserveamerica.com/unifSearchResults.do', '_system');">Click here for online reservations</a> at reserveamerica.com. - call 607.778.2193.  Shelter rental rates are $90.00 on weekends/holidays, along with a reduced rate of $30.00 on non-holday weekdays. A $5 transaction fee is applied to all reservations.</li>
+                                <li>Two-mile paved walking/biking path; participant in the Wegman's <a style="color: aqua" href="#" onclick="window.open('http://www.wegmans.com/webapp/wcs/stores/servlet/ProductDisplay?productId=733834&storeId=10052&langId=-1', '_system');">"Passport to Family Wellness"</a> program.</li>
+                                <li>Volleyball nets</li>
+                                <li>Youth Group Camping Area for organized youth groups; call 607-778-2193 for information or a permit. Please call at least one week in advance of your planned arrival.</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><strong>Boating</strong></button>
+                        <div class="content"><br/>
+                             <ul>
+                                <li>1,200 acre reservoir</li>
+                                <li>New York State boat launch</li>
+                                <li>Parking for 70 cars and trailers</li>
+                                <li>Motors with 25 hp or less permitted (max 10 mph)</li>
+                                <li>Rental boats are available from 11:00 a.m. to 7:30 p.m. Memorial Day weekend through Labor Day. (Hours may vary)</li>
+                            </ul>
+                            <br/>
+                            <style>
+                                table {
+                                    font-family: arial, sans-serif;
+                                    border-collapse: collapse;
+                                    width: 100%;
+                                }
+
+                                td, th {
+                                    border: 1px solid #dddddd;
+                                    text-align: left;
+                                    padding: 8px;
+                                }
+
+                                tr:nth-child(even) {
+                                    background-color: #000;
+                                }
+                            </style>
+                            <div style="overflow-x:auto;">
+                                <table>
+                                  <tr>
+                                    <th>Boat</th>
+                                    <th>Deposit (rental fee taken out of deposit)</th>
+                                    <th>Per Hour</th>
+                                    <th>Per Day</th>
+                                  </tr>
+                                  <tr>
+                                    <td>Paddleboards/Kayaks</td>
+                                    <td>$10.00</td>
+                                    <td>$8.00</td>
+                                    <td>NA</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Sailboats</td>
+                                    <td>$10.00</td>
+                                    <td>$8.00</td>
+                                    <td>$30.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Stand-Up Paddleboards</td>
+                                    <td>$10.00</td>
+                                    <td>$8.00</td>
+                                    <td>NA</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Rowboats/Canoes</td>
+                                    <td>$10.00</td>
+                                    <td>$5.00</td>
+                                    <td>$20.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Sr. Citizen(age 60+) /Veteran Rowboat/Canoe*</td>
+                                    <td>$5.00</td>
+                                    <td>$3.00</td>
+                                    <td>$10.00</td>
+                                  </tr>
+                            </table>
+                        </div>
+                        <br/>
+                            <p>*Veteran must present the Broome County Veteran ID card at the park to receive discount. More information may be found <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/veterans', '_system');">here.</a></p>
+                        <br/>
+                        </div>
+                        <button class="collapsible"><p><strong>Swimming</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>White sand beach; open 11:00am - 7:30pm, Memorial Day weekend-Labor Day (hours may vary)</li>
+                                <li>Certified lifeguards</li>
+                                <li>Changing areas</li>
+                            </ul>
+                        </div>
+                        <button class="collapsible"><p><strong>Fishing</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Fish for pike, bass and panfish</li>
+                                <li>Fish from shore, inlet, or rental boats</li>
+                                <li>Ice fishing permitted, pending safe ice conditions.</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Youth Group Camping</strong></button>
+                        <div class="content"><br/>
+                            <ul>
+                                <li>Group camping, by organized youth groups, (e.g. church youth groups, schools, YMCA, YWCA, Boy Scouts, Girl Scouts) is permitted.</li>
+                                <li>To secure a permit, or request additional information, call 607.778.2193. Please call for a permit at least one week prior to the date requested</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Brochure</strong></button>
+                        <div class="content"><br/>
+                            <a style="color: aqua" href="#" onclick="window.open('http://www.gobroomecounty.com/files/parks/pdfs/Dorchester%20Park%20Brochure%20(2014-01).pdf', '_system');">Dorchester Park Brochure</a>
+                            <br/><br/>
+                        </div>
+                            
+                        <button class="collapsible" onclick="getLocation()" id="btnLocation"><strong>Directions</strong></button>
+                        <div class="content"><br/>
+                            <div id="mapholder"></div>
+                            <script>
+                            var x = document.getElementById("demo");
+                            function getLocation() {
+                                if (navigator.geolocation) {
+                                    navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                } else { 
+                                    x.innerHTML = "Geolocation is not supported by this browser.";
+                                }
+                            }
+
+                            function showPosition(position) {
+                                var lat = 42.3534056;
+                                var lon = -75.9761444;
+                                var latlon = new google.maps.LatLng(lat, lon)
+                                var mapholder = document.getElementById('mapholder')
+                                mapholder.style.height = '400px';
+                                mapholder.style.width = '100%';
+
+                                var myOptions = {
+                                center:latlon,zoom:14,
+                                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                mapTypeControl:false,
+                                navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                }
+
+                                var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                            }
+
+                            function showError(error) {
+                                switch(error.code) {
+                                    case error.PERMISSION_DENIED:
+                                        x.innerHTML = "User denied the request for Geolocation."
+                                        break;
+                                    case error.POSITION_UNAVAILABLE:
+                                        x.innerHTML = "Location information is unavailable."
+                                        break;
+                                    case error.TIMEOUT:
+                                        x.innerHTML = "The request to get user location timed out."
+                                        break;
+                                    case error.UNKNOWN_ERROR:
+                                        x.innerHTML = "An unknown error occurred."
+                                        break;
+                                }
+                            }
+                            </script>
+                            <a style="color: aqua" href="#" onclick="window.open('http://maps.google.com/?q=42.3534056, -75.9761444', '_system');"><b><br/>Get Directions</b></a>
+                            <br/>
+                            <p><b>5469 NY Rt. 26<br/>Whitney Point, NY 13862<br/>607.692.4612</b></p>
+                                <div id="result"></div>
+                                <div id="map-canvas"></div>
+                                <p><br/>FROM CORTLAND:<br/>Rt.81 South to Exit 8 (Whitney Point). Turn left at end of exit ramp. At second light take a left and go over bridge, turn left after bridge, park is 2 miles on left.<br/><br/>FROM BAINBRIDGE/GREENE:<br/>Rt.206 West to Whitney Point. Turn right at stop sign. Park is 2 miles on left.<br/><br/>FROM JOHNSON CITY/BINGHAMTON:<br/>Rt.17 to Rt. 81 North to Exit 8 (Whitney Point). Take right off exit ramp, turn left at "T" in road. Turn right over bridge. After bridge turn left, park is 2 miles on left.<br/><br/>FROM ENDICOTT/VESTAL:<br/>Rt.26 North to Whitney Point. Take left at "T" in road. Take right over bridge, then left after bridge, park is 2 miles on left.<br/><br/>FROM NEWARK VALLEY/OWEGO:<br/>Rt.38 to Rt. 38B, turn left on Rt. 26 North to Whitney Point. Take a left a "T" in road, take right over bridge, turn left just after bridge, park is 2 miles on left.<br/><br/>FROM ITHACA:<br/>Rt.79 East to Lisle. Bear right just over bridge. Go to second light in Whitney Point. Turn left over bridge, turn left just after bridge, park is 2 miles on left.</p><br/>
+
+                        </div>
+                        
+                        <button class="collapsible"><p><strong>Broome County Parks Triathlon & Youth Triathlon</strong></button>
+                        <div class="content"><br/>
+                            <p>More information  <a style="color: aqua" href="#" onclick="window.open('http://gobroomecounty.com/parks/triathlon?_ga=2.11873716.142413047.1532307603-562096736.1531754075', '_system');">here</a>.</p>
+                            <img src="img/Youth%20Triathlon%207.JPG" style="display: block; margin-left: auto; margin-right: auto; width: 50%;">
+                            <br/><br/>
+                        </div>
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <div data-role="footer" id="footer" style="position: relative; left: 0; bottom: 0; width: 100%; text-align: center;">
+                <p class="text-center">Copyright &copy; 2018, Broome County</p>
+            </div> <!-- footer -->
+    </body>
+</html>
