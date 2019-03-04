@@ -1,7 +1,0 @@
- E1IXWTY2QOW:APA91BE-T14MRF59_6Z-K-KLHZLG4JY7YIZLKZWK80CWDNEWDJJIC591AVCZIJRN1TH5DAARVZOXJNEJJU1GIYYJGZDTUDQXZLW3T66GBKIULCCQGV9RUVF2WMFER-OIMKHVJ-JUMELYXQ3G5XF9CNNXS4I4_1GT_Q
- 
- --service apns --payload "{ \"aps\": { \"alert\": \"Hello World\" } }"
- 
- --service fcm --payload "{ \"data\": { \"title\": \"Hello\", \"message\": \"World\"} }"
- 
- phonegap push --deviceID e1iXWTy2qow:APA91bE-t14mRf59_6Z-K-KlHZLg4JY7yIzLkZwK80cWdneWdjjIC591AVCziJRN1th5daaRvZOXjNeJju1GiyYjgZdTuDqXZLw3T66gBKIuLCcQgV9RuvF2wmfer-OiMkhVJ-juMElyXQ3g5xf9cnnXs4I4_1Gt_Q --service fcm --payload "{ \"data\": { \"title\": \"Hello\", \"message\": \"World\"} }"
